@@ -1,0 +1,28 @@
+<ion-card >
+  <ion-card-header>
+    <ion-card-title>The Team</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="3" size="12">
+          <app-team-card [teamMember]="member" ></app-team-card>
+        </ion-col>
+
+        <ion-col size-sm="3" size="12">
+            <app-team-card [teamMember]="member"></app-team-card>
+        </ion-col>
+
+        <ion-col size-sm="3" size="12">
+            <app-team-card [teamMember]="member"></app-team-card>
+        </ion-col>
+
+        <ion-col size-sm="3" size="12">
+            <app-team-card [teamMember]="member"></app-team-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card-content>
+</ion-card>
