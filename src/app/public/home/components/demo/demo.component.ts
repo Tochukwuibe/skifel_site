@@ -26,8 +26,7 @@ export class DemoComponent implements OnInit {
   }
 
   public onDemo() {
-    window.open('https://novadev-4af34.firebaseapp.com/#/tabs/(feed:feed)', '_blank');
-    console.log('navigated');
+    window.open('https://novadev-4af34.firebaseapp.com', '_blank');
   }
 
 }
