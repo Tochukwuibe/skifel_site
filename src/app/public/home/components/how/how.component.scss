@@ -2,6 +2,10 @@ ion-card {
     background: white;
     height: 100%;
 }
+
+ion-col {
+    border: 1px solid red;
+}
 .dollar {
     font-size: 60px
 }
@@ -12,9 +16,22 @@ ion-card {
     color: black;
 }
 
-ion-grid {
+.main-row {
+    height: 100%;
+}
 
+.map {
+    background-image: url(../../../../../assets/imgs/map_phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+
+ion-grid {
     margin-bottom: 10%;
+    height: 100%;
 }
 .bulb {
     font-size: 150px;

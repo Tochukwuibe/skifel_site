@@ -14,6 +14,7 @@ import { TeamComponent } from './components/team/team.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { TeamCardComponent } from './components/team-card/team-card.component';
 import { FeedbackPage } from './modals/feedback/feedback.page';
+import { UsersCardsComponent } from './components/users-cards/users-cards.component';
 
 
 const homeRoutes: Routes = [
@@ -43,7 +44,8 @@ const homeRoutes: Routes = [
     TeamComponent,
     ContactComponent,
     TeamCardComponent,
-    FeedbackPage
+    FeedbackPage,
+    UsersCardsComponent
   ],
   entryComponents: [
     FeedbackPage

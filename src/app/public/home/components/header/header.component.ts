@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  @ViewChild('slides') slides: Slides;
+  public photo = 'url(../../../../../../../assets/imgs/stacy_pro_phone.png)';
+
 
   constructor(
     private router: Router

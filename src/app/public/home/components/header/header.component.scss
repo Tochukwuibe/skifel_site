@@ -12,23 +12,24 @@
     background-image: url(../../../../../assets/imgs/stacy_pro_phone.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 .brandon {
     background-image: url(../../../../../assets/imgs/brandon_pro_phone.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 .header-row {
     height: 100%;
 }
 
-ion-col {
-    border: 1px solid red;
+ion-card {
+    margin: 0;
+    background: var(--ion-color-medium)
 }
 
-ion-card-content {
-    height: 100%;
-    width: 100%;
-}
