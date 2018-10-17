@@ -1,21 +1,52 @@
+
+
+  
 .container {
     display: grid;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
     height: 100%;
 }
 
-.item1, .item3 {
+.item1 {
     display: grid;
-    grid-template-rows: 5% auto 5%;
-    grid-template-columns: 10% auto 10;
+    grid-column-start: 1;
+    grid-column-end: 2;
 
-    img {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3
-    }
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    align-items: center;
+    justify-items: center;
 }
+
+.item2{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item3 {
+
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.phone_demo {
+    max-height: 300px;
+}
+
+
 
 ion-card {
     margin: 0;
@@ -23,16 +54,6 @@ ion-card {
     height: 100%;   
 }
 
-// .main-card-content {
-//     height: 100%;
-//     width: 100%;
-
-//     display: grid;
-//     grid-template-columns: 20% auto 20%;
-//     grid-template-rows: 10% 20% auto 10% 20%;
-
-//     align-items: center;
-// }
 
 .main-card-content {
     display: grid;
@@ -91,11 +112,15 @@ ion-card {
 
 @media(min-width: 200px) {
 
- .action {
-     align-self: end;
-     grid-row-start: 5;
-     grid-row-end: 6;
- }
+    .action {
+        align-self: start;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .phone_demo {
+        max-height: 280px;
+    }
    
 }
 
@@ -113,10 +138,9 @@ ion-card {
         grid-row-end: 5
      }
 
-   .brandon, .stacy {
-       width: 100%;
+     .phone_demo {
         max-height: 300px;
-   }
+    }
    
 }
 
@@ -132,74 +156,38 @@ ion-card {
         grid-column-start: 2;
         grid-column-end: 3;
      }
+
+     .phone_demo {
+        max-height: 400px;
+    }
 }
+
+
+
+
+
 
 @media(min-width: 768px) {
-    .brandon, .stacy {
-        width: 100%;
-        max-height: 500px;
-    } 
 
-    .main-card-content {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 0.8fr 2.1fr 1fr;
-        grid-template-rows: 1.5fr 0.6fr 1.6fr 0.5fr 1.5fr;
-        grid-gap: 1px 1px;
-        grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . .";
-    }
 
-    .title, .action, .card-cnt {
-        grid-column-start: 2;
-        grid-column-end: 3
-    }   
- 
+.main-card-content {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;
+    grid-template-rows: 1fr 75px auto 75px 1fr;
+    grid-gap: 10px 1px;
+    grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . .";
+}
 
-    .title {
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
+.phone_demo {
+    max-height: 500px;
+}
 
-    .action {
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-
-    .card-cnt {
-        grid-row-start: 3;
-        grid-row-end: 4;
-     }
 
 }
 
-// defines the point at witch the layout changes
-@media(max-width: 768px) {
-    
-    .container {
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 50% 50%;
-    }
 
-    .item1 {
-        grid-column-start: 1;
-        grid-column-end: 2
-    }
 
-    .item3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .item2{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-}
 
 
 @media(min-width: 992px) {
@@ -210,19 +198,38 @@ ion-card {
         grid-template-columns: 1fr 2fr 1fr;
     }
 
-    .main-card-content {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 0.6fr 1.8fr 0.6fr;
-        grid-template-rows: 1fr 75px auto 75px 1fr;
-        grid-gap: 10px 1px;
-        grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . .";
+
+    .item1 {
+       
+        grid-column-start: 1;
+        grid-column-end: 2;
+    
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
+    }
+    
+    .item2{
+    
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .item3 {
+    
+        grid-column-start: 3;
+        grid-column-end: 4;
+    
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
     }
 
-    .brandon, .stacy {
-        width: 100%;
-        max-height: 600px;
-    } 
+
+ 
 
     .title {
         align-self: end;
@@ -237,22 +244,23 @@ ion-card {
      }
 
 
+
+     .phone_demo {
+        max-height: 700px;
+    }
+
+
 }
+
 
 
 @media(min-width: 1000px) {
-    // .main-card-content {
-    //     display: grid;
-    //     height: 100%;
-    //     grid-template-columns: 0.8fr 2.1fr 1fr;
-    //     grid-template-rows: 1.4fr 0.9fr 1.4fr;
-    //     grid-gap: 1px 1px;
-    //     grid-template-areas: ". . ." ". . ." ". . .";
-    // }
+   
+    .phone_demo {
+        max-height: 900px;
+    }
 
 }
-
-
 
 
 

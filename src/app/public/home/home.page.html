@@ -1,46 +1,7 @@
 <ion-header>
   <ion-toolbar color="primary">
-
-    <ion-grid>
-      <ion-row>
-        <ion-col *ngIf="(minWidth$ | async) ">
-          <ion-menu-button color="dark"></ion-menu-button>
-        </ion-col>
-        <ion-col>
-          <ion-buttons>
-            <ion-button (click)="navigate('header')">
-              Nova
-            </ion-button>
-          </ion-buttons>
-        </ion-col>
-        <ion-col>
-
-          <ion-buttons justify-content-evenly *ngIf="!(minWidth$ | async) ">
-
-            <ion-button (click)="navigate('why')">
-              Problem
-            </ion-button>
-
-            <ion-button (click)="navigate('how')">
-              Solution
-            </ion-button>
-
-            <ion-button (click)="navigate('team')">
-              Team
-            </ion-button>
-
-            <ion-button (click)="navigate('contact')">
-              Contact
-            </ion-button>
-
-          </ion-buttons>
-
-        </ion-col>
-        <ion-col></ion-col>
-      </ion-row>
-    </ion-grid>
-
-    <ion-menu-toggle slot="end"></ion-menu-toggle>
+    <ion-title slot="start">Skifel</ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
