@@ -1,40 +1,149 @@
 
 
-.header-grid {
-   
-}
-
-
 .container {
     display: grid;
-    grid-template-rows: 1fr 1fr 
+    grid-template-rows: 25% 50% 25%;
+    height: 95vh;
+    // border: 1px solid red;
+}
+
+.item {
+    // border: 1px solid red;
+}
+
+.item1, .item3 {
+    display: grid;
+    grid-template-rows: 5% auto 5%;
+    grid-template-columns: 10% auto 10;
+
+    img {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3
+    }
+  
 }
 
 
-
-
-.stacy {
-    background-image: url(../../../../../assets/imgs/stacy_pro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-position: center;
-}
-
-.brandon {
-    background-image: url(../../../../../assets/imgs/barandon_pro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-position: center;
-}
-
-.header-row {
-    height: 100%;
-}
 
 ion-card {
     margin: 0;
-    background: var(--ion-color-medium)
+    background: var(--ion-color-medium);
+    height: 100%;   
 }
+
+ion-card-content {
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    display: grid;
+    // grid-template-columns: 10% auto 10%;
+    // grid-template-rows: 40% auto 40%;
+    .card-cnt {
+        align-self: center;
+        text-align: center;
+        // grid-column-start: 2;
+        // grid-column-end: 3;
+        // grid-row-start: 2;
+        // grid-row-end: 3
+    }
+
+    .action {
+        align-self: center;
+        // grid-column-start: 2;
+        // grid-column-end: 3;
+        // grid-row-start: 3;
+        // grid-row-end: 4
+    }
+
+    .title {
+        text-align: center;
+    }
+   
+}
+
+// defines the point at witch the layout changes
+@media(max-width: 768px) {
+    
+    .container {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2
+    }
+
+    .item3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .item2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+
+
+@media(min-width: 300px) {
+
+   .brandon, .stacy {
+       width: 100%;
+        max-height: 300px;
+   } 
+
+}
+
+
+@media(min-width: 576px) {
+    
+    .brandon, .stacy {
+        width: 100%;
+        max-height: 400px;
+    } 
+}
+
+@media(min-width: 768px) {
+    .brandon, .stacy {
+        width: 100%;
+        max-height: 500px;
+    } 
+
+}
+
+
+@media(min-width: 992px) {
+   
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.brandon, .stacy {
+    width: 100%;
+    max-height: 600px;
+} 
+}
+
+
+@media(min-width: 1200px) {
+   
+
+}
+
+
+
+// heigth queries
+
+// @media(min-heigth)
+
 

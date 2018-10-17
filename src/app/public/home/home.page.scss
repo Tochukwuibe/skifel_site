@@ -1,18 +1,21 @@
-.wrapper {
+.container {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-rows: 100% 100% 100% 100% 100% 100%
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr auto;
 }
 
-.wrapper-child {
-    border: 1px solid red;
+.item {
+  
+    // height: 90vh;
     margin-bottom: 5%; 
 }
 .contact {
     margin-bottom: 0;
+    height: auto;
 }
 
 .landing {
-    height: 100vh;
+    border: 1px solid red;
+    // height: 95vh;
 }
