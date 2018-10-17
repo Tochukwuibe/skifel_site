@@ -1,21 +1,16 @@
 .container {
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr auto;
+    // display: grid;
+    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr auto;
 }
 
 .item {
-  
-    // height: 90vh;
-    margin-bottom: 5%; 
+    border: 1px solid red;
 }
 .contact {
-    margin-bottom: 0;
-    height: auto;
+   
 }
 
 .landing {
     // border: 1px solid red;
-    // height: 95vh;
+    height: 95vh;
 }
