@@ -1,25 +1,102 @@
-ion-grid {
-    height: 100vh;
-}
-
-.feed {
-    // background-image: url(../../../../../assets/imgs/feed_phone.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // position: relative;
-    // background-position: center; 
-}
 
 
 
-.chat {
-//     background-image: url(../../../../../assets/imgs/chat_phone.png);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     position: relative;
-//     background-position: center;  
- }
-
-.main-row {
+  .grid-container {
+    display: grid;
     height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: ". ." ". .";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+
+
+  .phone_demo {
+      max-height: 300px
+  }
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3
+
+  }
+
+  .item2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2
+  }
+
+  .item3 {
+  
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3
+}
+  
+
+
+
+@media(min-width: 576px) {
+    .phone_demo {
+
+        max-height: 500px;
+       }
+}
+
+@media(min-width: 768px) {
+  
+}
+
+
+@media(min-width: 992px) {
+    .grid-container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1px 1px;
+        grid-template-areas: ". . .";
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+      }
+      
+      
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2
+      }
+    
+      .item2 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2
+      }
+    
+      .item3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2
+    }
+
+   
+}
+
+
+@media(min-width: 1200px) {
+   
 }

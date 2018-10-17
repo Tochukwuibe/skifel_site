@@ -1,52 +1,29 @@
-<ion-grid>
-
-  <ion-row class="main-row" justify-content-center>
-    <ion-col size-sm="4" size="12" class="feed"></ion-col>
-
-    <ion-col size-sm="4" size="12" align-self-center>
-
-      <ion-row>
-        <ion-col>
-          <h3 text-center>See a demo now</h3>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col></ion-col>
-
-        
-        <ion-col>
-          <ion-button (click)="onDemo()" color="light" fill="outline" shape="round" expand="full">
-            Demo
-          </ion-button>
-        </ion-col>
-        <ion-col></ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col text-center>
-          <h3>What do you think of our idea?</h3>
-          <h6>Your feedback is important to us</h6>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col></ion-col>
-        <ion-col>
-          <ion-button (click)="onFeedback()" color="light" fill="outline" shape="round" expand="full">
-            Feedback
-          </ion-button>
-        </ion-col>
-        <ion-col></ion-col>
-      </ion-row>
-
-    </ion-col>
+<div class="grid-container">
+  <div class="item1">
+      <img class="phone_demo" src="../../../../../assets/imgs/feed_phone.png" alt="">
+  </div>
 
 
-    <ion-col size-sm="4" size="12" class="chat"></ion-col>
-  </ion-row>
+  <div class="item2">
+
+    <h3>See a demo now</h3>
+
+    <ion-button (click)="onDemo()" color="light" fill="outline" shape="round" expand="full">
+      Demo
+    </ion-button>
+
+    <h3>What do you think of our idea?</h3>
+    <h6>Your feedback is important to us</h6>
+
+    <ion-button (click)="onFeedback()" color="light" fill="outline" shape="round" expand="full">
+      Feedback
+    </ion-button>
+
+  </div>
 
 
+  <div class="item3">
+      <img class="phone_demo" src="../../../../../assets/imgs/chat_phone.png" alt="">
+  </div>
 
-
-
-</ion-grid>
+</div>

@@ -1,14 +1,19 @@
-ion-card {
-    background: white;
+
+.container {
+    display: grid;
     height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "." ".";
+    align-items: center;
+    justify-items: center
 }
 
-ion-col {
- 
+.item1 {
+    text-align: center;
 }
-.dollar {
-    font-size: 60px
-}
+
 
 .text {
     font-size: 20px;
@@ -16,16 +21,9 @@ ion-col {
     color: black;
 }
 
-.main-row {
-    height: 100%;
-}
-
 .map {
-    // background-image: url(../../../../../assets/imgs/map_phone.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // position: relative;
-    // background-position: center;
+
+ max-height: 300px;
 }
 
 
@@ -37,6 +35,35 @@ ion-grid {
     color: white;
     text-align: center;
 }
-.goer-icon {
-    font-size: 30px;
+
+
+@media(min-width: 576px) {
+    .map {
+
+        max-height: 500px;
+       }
+}
+
+@media(min-width: 768px) {
+  
+}
+
+
+@media(min-width: 992px) {
+
+    
+
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1px 1px;
+        grid-template-areas: ". .";
+    }
+}
+
+
+@media(min-width: 1200px) {
+   
 }
