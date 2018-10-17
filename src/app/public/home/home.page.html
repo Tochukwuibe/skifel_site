@@ -1,78 +1,82 @@
 <ion-header>
-    <ion-toolbar color="primary">
-    
-      <ion-grid>
-        <ion-row>
-          <ion-col *ngIf="(minWidth$ | async) "> 
-              <ion-menu-button color="dark"></ion-menu-button>
-          </ion-col>
-          <ion-col>
-            <ion-buttons>
-              <ion-button (click)="navigate('header')">
-                Nova
-              </ion-button>
-            </ion-buttons>
-          </ion-col>
-          <ion-col>
-  
-            <ion-buttons justify-content-evenly *ngIf="!(minWidth$ | async) ">
-  
-              <ion-button (click)="navigate('why')">
-                Problem
-              </ion-button>
-  
-              <ion-button (click)="navigate('how')">
-                Solution
-              </ion-button>
-  
-              <ion-button (click)="navigate('team')">
-                Team
-              </ion-button>
-  
-              <ion-button (click)="navigate('contact')">
-                Contact
-              </ion-button>
-  
-            </ion-buttons>
-  
-          </ion-col>
-          <ion-col></ion-col>
-        </ion-row>
-      </ion-grid>
-  
-      <ion-menu-toggle slot="end"></ion-menu-toggle>
-    </ion-toolbar>
-  </ion-header>
-  
-  
-  <ion-content>
-  
-    <div no-padding no-margin #header>
+  <ion-toolbar color="primary">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngIf="(minWidth$ | async) ">
+          <ion-menu-button color="dark"></ion-menu-button>
+        </ion-col>
+        <ion-col>
+          <ion-buttons>
+            <ion-button (click)="navigate('header')">
+              Nova
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col>
+
+          <ion-buttons justify-content-evenly *ngIf="!(minWidth$ | async) ">
+
+            <ion-button (click)="navigate('why')">
+              Problem
+            </ion-button>
+
+            <ion-button (click)="navigate('how')">
+              Solution
+            </ion-button>
+
+            <ion-button (click)="navigate('team')">
+              Team
+            </ion-button>
+
+            <ion-button (click)="navigate('contact')">
+              Contact
+            </ion-button>
+
+          </ion-buttons>
+
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-menu-toggle slot="end"></ion-menu-toggle>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="wrapper">
+    <div class="wrapper-child landing" no-padding no-margin #header>
       <app-header></app-header>
     </div>
-  
-    <div no-padding no-margin #why>
+
+    <div class="wrapper-child" no-padding no-margin #why>
       <app-why></app-why>
-  
+
     </div>
-  
-    <div no-padding no-margin #how>
+
+    <div  class="wrapper-child" no-padding no-margin #how>
       <app-how></app-how>
       <app-users-cards></app-users-cards>
     </div>
-  
-    <div no-padding no-margin #demo>
+
+    <div  class="wrapper-child" no-padding no-margin #demo>
       <app-demo></app-demo>
     </div>
-  
-    <div no-padding no-margin #team>
+
+    <div  class="wrapper-child" no-padding no-margin #team>
       <app-team></app-team>
     </div>
-  
-    <div no-padding no-margin #contact>
+
+    <div  class="wrapper-child contact" no-padding no-margin #contact>
       <app-contact></app-contact>
     </div>
-  
-  
-  
-  </ion-content>
+  </div>
+
+
+
+
+
+</ion-content>
