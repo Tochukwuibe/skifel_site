@@ -1,9 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, transition, useAnimation } from '@angular/animations';
+import { slideInLeft } from 'ng-animate';
 
 @Component({
   selector: 'app-why',
   templateUrl: './why.component.html',
-  styleUrls: ['./why.component.scss']
+  styleUrls: ['./why.component.scss'],
+  animations: [
+    trigger('inLeft', [
+      transition('void => *', useAnimation(slideInLeft))
+    ])
+  ]
 })
 export class WhyComponent implements OnInit {
 

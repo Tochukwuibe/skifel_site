@@ -13,6 +13,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "~6.1.1",
     "@angular/common": "~6.1.1",
     "@angular/core": "~6.1.1",
     "@angular/fire": "^5.0.2",
@@ -27,6 +28,7 @@
     "@ionic/angular": "4.0.0-beta.13",
     "core-js": "^2.5.3",
     "firebase": "^5.5.4",
+    "ng-animate": "^0.3.4",
     "rxjs": "6.2.2",
     "zone.js": "^0.8.26"
   },
