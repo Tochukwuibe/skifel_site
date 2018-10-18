@@ -1,4 +1,4 @@
-<h3 class="title"> Can you relate ?</h3>
+
 
 <ion-card  
 snInViewport
@@ -6,16 +6,16 @@ snInViewport
  class="main-card this-why" color="medium">
   <ion-card-content>
     <ion-grid>
-      <ion-row wrap>
-        <ion-col [@inLeft]="enter$ | async" size="12" size-lg="4">
+      <ion-row wrap align-items-center justify-content-center>
+        <ion-col align-self-center align-items-center [@inLeft]="enter$ | async" size="12" size-lg="4">
           <app-why-card [icon]="'cash'" [text]="money"></app-why-card>
         </ion-col>
 
-        <ion-col size="12" size-lg="4">
+        <ion-col align-self-center align-items-center size="12" size-lg="4">
           <app-why-card [icon]="'time'" [text]="time"></app-why-card>
         </ion-col>
 
-        <ion-col [@inRight]="enter$ | async" size="12" size-lg="4">
+        <ion-col align-self-center align-items-center [@inRight]="enter$ | async" size="12" size-lg="4">
           <app-why-card [icon]="'eye-off'" [text]="difficult"></app-why-card>
         </ion-col>
       </ion-row>

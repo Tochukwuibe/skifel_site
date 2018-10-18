@@ -1,18 +1,29 @@
 ion-card {
     background: white;
+    height: 100%;
 }
 
-.title {
-    text-align: center;
-}
+
 
 ion-grid {
-    // padding: 0;
+    height: 100%;
 }
 
 ion-card-content {
     padding-bottom: 3%;
     color: black;
+    height: 100%;
+}
+
+ion-col {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+ion-row {
+    height: 100%;
 }
 
 .bulb {
@@ -21,8 +32,5 @@ ion-card-content {
     text-align: center;
 }
 
-.main-card {
-    // padding: 0;
-    // height: 60vh
-}
+
 

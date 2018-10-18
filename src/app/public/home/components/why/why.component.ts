@@ -55,9 +55,9 @@ export class WhyComponent implements OnInit, OnDestroy {
 
 
   private setTexts() {
-    this.money = 'Going out with friends and having a good time can become very expensive';
+    this.money = 'Going out with friends and having a good time can become very expensive.';
     this.time = 'I spend a lot of time going through Instagram, Twitter etc.. trying yo find fun things to do with my free time.';
-    this.difficult = 'There isn`t enough open things to do around me, they are just too exclusive and difficult to be a part of';
+    this.difficult = 'There isn`t enough open things to do around me, they are just too exclusive and difficult to be a part of.';
   }
 
 
