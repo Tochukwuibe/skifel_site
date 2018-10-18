@@ -1,28 +1,23 @@
-<div class="container">
-  
+<div class="container" snInViewport (inViewportChange)="onInView($event)">
+
   <div class="item1" text-center>
-      <ion-icon color="primary" name="bulb" class="bulb"></ion-icon>
+    <ion-icon [@bulb]="enter$ | async" color="primary" name="bulb" class="bulb"></ion-icon>
 
-          <p text-center>The solition is simple supply and demand. If there were a higher sulpply of social events,
-              then
-              the cost, complexity, and exclusivity will reduce.</p>
+    <p text-center  [@inLeft]="enter$ | async" >The solition is simple supply and demand. If there were a higher sulpply of social events,
+      then
+      the cost, complexity, and exclusivity will reduce.</p>
 
-            <p text-center>
-              We believe we can achieve this by offering to pay people to host social event, making the
-              process
-              rewarding for both event holders and goers.
-            </p>
-     
-  </div>
-
-  <div class="item2">
-      <img class="map" src="../../../../../assets/imgs/map_phone.png"  alt="">
+    <p text-center [@inLeft]="enter$ | async">
+      We believe we can achieve this by offering to pay people to host social event, making the
+      process
+      rewarding for both event holders and goers.
+    </p>
 
   </div>
-  
+
+  <div class="item2" [@inRight]="enter$ | async" >
+    <img class="map" src="../../../../../assets/imgs/map_phone.png" alt="">
+  </div>
+
 
 </div>
-        
-
-   
-      

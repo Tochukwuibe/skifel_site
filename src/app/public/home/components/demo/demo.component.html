@@ -1,10 +1,11 @@
-<div class="grid-container">
-  <div class="item1">
+
+<div class="grid-container" snInViewport (inViewportChange)="onInView($event)">
+  <div class="item1" [@inLeft]="enter$ | async" >
       <img class="phone_demo" src="../../../../../assets/imgs/feed_phone.png" alt="">
   </div>
 
 
-  <div class="item2">
+  <div class="item2" [@zoomin]="enter$ | async" >
 
     <h3>See a demo now</h3>
 
@@ -22,7 +23,7 @@
   </div>
 
 
-  <div class="item3">
+  <div class="item3" [@inRight]="enter$ | async">
       <img class="phone_demo" src="../../../../../assets/imgs/chat_phone.png" alt="">
   </div>
 

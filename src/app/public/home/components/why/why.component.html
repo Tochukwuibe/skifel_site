@@ -1,10 +1,13 @@
 <h3 class="title"> Can you relate ?</h3>
 
-<ion-card class="main-card" color="medium">
+<ion-card  
+snInViewport
+(inViewportChange)="onInView($event)"
+ class="main-card this-why" color="medium">
   <ion-card-content>
     <ion-grid>
       <ion-row wrap>
-        <ion-col [@inLeft] size="12" size-lg="4">
+        <ion-col [@inLeft]="enter$ | async" size="12" size-lg="4">
           <app-why-card [icon]="'cash'" [text]="money"></app-why-card>
         </ion-col>
 
@@ -12,7 +15,7 @@
           <app-why-card [icon]="'time'" [text]="time"></app-why-card>
         </ion-col>
 
-        <ion-col size="12" size-lg="4">
+        <ion-col [@inRight]="enter$ | async" size="12" size-lg="4">
           <app-why-card [icon]="'eye-off'" [text]="difficult"></app-why-card>
         </ion-col>
       </ion-row>

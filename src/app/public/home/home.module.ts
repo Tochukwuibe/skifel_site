@@ -16,6 +16,8 @@ import { TeamCardComponent } from './components/team-card/team-card.component';
 import { FeedbackPage } from './modals/feedback/feedback.page';
 import { UsersCardsComponent } from './components/users-cards/users-cards.component';
 
+import { InViewportModule } from '@thisissoon/angular-inviewport';
+
 
 const homeRoutes: Routes = [
   {
@@ -32,7 +34,8 @@ const homeRoutes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(homeRoutes),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InViewportModule
   ],
   declarations: [
     HomePage,
