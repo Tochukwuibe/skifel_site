@@ -90,7 +90,6 @@ ion-card {
 }
 
 .title {
-
     text-align: center;
    
     grid-column-start: 2;
@@ -103,12 +102,13 @@ ion-card {
 #title-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 80px;
-    color: black;
+    font-size: 65px;
+    color: white;
+    text-shadow: 2px 2px 25px #000000
 }
 
 #brief-desc {
-    font-size: 25px;
+    font-size: 20px;
     color: black;
 }
 
@@ -116,6 +116,18 @@ ion-card {
     align-self: center;
 } 
 
+
+// setting size for really small screens
+@media(max-width: 320px) {
+
+    #title-text {
+        font-size: 50px;
+    }
+    
+    #brief-desc {
+        font-size: 17px;
+    }
+}
 
 
 @media(min-width: 200px) {
@@ -165,9 +177,7 @@ ion-card {
         grid-column-end: 3;
      }
 
-    //  .phone_demo {
-    //     max-height: 400px;
-    // }
+  
 }
 
 
@@ -176,6 +186,15 @@ ion-card {
 
 
 @media(min-width: 768px) {
+
+    #brief-desc {
+        font-size: 25px;
+    }
+
+    #title-text {
+        font-weight: 400;
+        font-size: 80px;
+    }
 
 
 .main-card-content {
@@ -249,6 +268,8 @@ ion-card {
 
     .card-cnt {
         align-self: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
      }
 
 
