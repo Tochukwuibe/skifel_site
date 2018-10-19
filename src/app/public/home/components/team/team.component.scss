@@ -1,9 +1,67 @@
 ion-card {
+    padding: 0;
+}
+
+.inner-card {
     background: white;
+    border: 1px solid red;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "." "." "." ".";
+    align-items: center;
+    justify-items: center;
+
+    :nth-child(even) {
+        background-color: black
+    }
+
+    :nth-child(odd) {
+        background-color: grey;
+    }
+}
+
+
+.item {
+    max-width: 300px;
 }
 
 ion-col {
     display: grid;
     align-items: center;
     justify-items: center;
+}
+
+
+
+@media(min-width: 576px) {
+
+}
+
+@media(min-width: 768px) {
+  
+}
+
+
+
+@media(min-width: 992px) {
+    .grid-container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1px 1px;
+        grid-template-areas: ". . . .";
+      }
+}
+
+
+@media(min-width: 1200px) {
+    
 }

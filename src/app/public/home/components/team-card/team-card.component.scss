@@ -1,9 +1,17 @@
-ion-card {
-    height: 90%;
-    max-width: 450px;
+@media(min-width: 768px) {
+
+    ion-card {
+        max-width: 400px;
+    } 
 }
 
-ion-card-content {
-    height: 100%;
-    width: 100%;
+
+
+@media(min-width: 992px) {
+   
+ion-card {
+    max-width: 230px;
 }
+}
+
+
