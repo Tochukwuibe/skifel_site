@@ -25,17 +25,10 @@
     // height: 100vh;
 }
 
-.landing {
-    height: 110vh;
-}
-
-
 
 @media(min-width: 576px) {
 
-    .landing {
-        height: 95vh;
-    }
+ 
    
 }
 
@@ -47,16 +40,15 @@
     margin: 5%;
    
 }
+.landing {
+    height: 95vh;
+}
 }
 
 
 @media(min-width: 992px) {
-    // .why {
-    //     height: 80vh;
-    // }
+ 
 }
 
 
-@media(min-width: 1200px) {
 
-}
