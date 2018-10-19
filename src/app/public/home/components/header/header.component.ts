@@ -3,7 +3,7 @@ import { Slides, Platform } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { trigger, transition, useAnimation } from '@angular/animations';
 
-import { zoomIn, fadeInDown} from 'ng-animate';
+import { zoomIn, fadeInDown, fadeInUp} from 'ng-animate';
 
 
 @Component({
@@ -12,10 +12,10 @@ import { zoomIn, fadeInDown} from 'ng-animate';
   styleUrls: ['./header.component.scss'],
   animations: [
     trigger('inLeft', [
-      transition('void => *', useAnimation(fadeInDown, {params: {timing: 1.5}}))
+      transition('void => *', useAnimation(fadeInUp, {params: {timing: 1.5}}))
     ]),
     trigger('inRight', [
-      transition('void => *', useAnimation(fadeInDown, {params: {timing: 1.5}}))
+      transition('void => *', useAnimation(fadeInUp, {params: {timing: 1.5}}))
     ]),
     trigger('zoomIn', [
       transition('void => *', useAnimation(zoomIn, {params: {timing: 2}}))
