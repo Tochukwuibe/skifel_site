@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
+      <ion-menu-button *ngIf="(minWidth$ | async) " color="dark"></ion-menu-button>
     <ion-title slot="start">Skiffel</ion-title>
     
   </ion-toolbar>
@@ -19,22 +20,22 @@
       <app-why></app-why>
     </div>
 
-    <h3 class="title">Our Plan</h3>
+    <h3 class="title" #plan>Our Plan</h3>
 
-    <div  class="item" no-padding no-margin #how>
+    <div  class="item" no-padding no-margin >
       <app-how></app-how>
       <app-users-cards></app-users-cards>
     </div>
 
-    <h3 class="title">Demo</h3>
+    <h3 class="title" #demo>Demo</h3>
 
-    <div  class="item demo" no-padding no-margin #demo>
+    <div  class="item demo" no-padding no-margin >
        <app-demo></app-demo>
     </div>  
 
-    <h3 class="title">Team</h3>
+    <h3 class="title" #team>Team</h3>
 
-    <div  class="item" no-padding no-margin #team>
+    <div  class="item" no-padding no-margin >
         <app-team></app-team>
     </div>
 
