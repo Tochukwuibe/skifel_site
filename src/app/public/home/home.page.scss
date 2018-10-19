@@ -22,15 +22,20 @@
 }
 
 .demo {
-    height: 100vh;
+    // height: 100vh;
 }
 
 .landing {
-    height: 95vh;
+    height: 110vh;
 }
 
 
+
 @media(min-width: 576px) {
+
+    .landing {
+        height: 95vh;
+    }
    
 }
 
