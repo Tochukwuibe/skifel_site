@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, LoadingController } from '@ionic/angular';
 import { FeedbackPage } from '../../modals/feedback/feedback.page';
 import { Subject, Observable } from 'rxjs';
 import { filter, first, map, tap } from 'rxjs/operators';
@@ -31,7 +31,8 @@ export class DemoComponent implements OnInit {
 
 
   constructor(
-    private modal: ModalController
+    private modal: ModalController,
+    private loadingCtrl: LoadingController
   ) { }
 
   ngOnInit() {
@@ -56,11 +57,13 @@ export class DemoComponent implements OnInit {
 
 
   public async onFeedback() {
-    const modal = await this.modal.create({
-      component: FeedbackPage
-    });
+
+    const loader = await this.loadingCtrl.create({ message: 'Please wait...' });
+    await loader.present();
+    const modal = await this.modal.create({ component: FeedbackPage });
 
     await modal.present();
+    await loader.dismiss();
   }
 
   public onDemo() {
