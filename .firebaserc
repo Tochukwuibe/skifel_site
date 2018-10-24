@@ -1,14 +1,2 @@
 {
-  "projects": {
-    "default": "novadev-4af34"
-  },
-  "targets": {
-    "novadev-4af34": {
-      "hosting": {
-        "skiffel": [
-          "skiffel"
-        ]
-      }
-    }
-  }
 }
