@@ -43,15 +43,13 @@ export class DemoComponent implements OnInit {
 
     this.enter$ = enterFil$.pipe(
       first(),
-      map(() => 'enter'),
-      tap((val) => console.log('animating enter cards'))
+      map(() => 'enter')
     );
   }
 
 
 
   onInView(e: boolean) {
-    console.log('entering cards ', e);
     this.enter.next(e);
   }
 
@@ -67,7 +65,7 @@ export class DemoComponent implements OnInit {
   }
 
   public onDemo() {
-    window.open('https://novadev-4af34.firebaseapp.com', '_blank');
+    window.open('https://skiffel-demo.firebaseapp.com/#/home', '_blank');
   }
 
 }
