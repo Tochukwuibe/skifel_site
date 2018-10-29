@@ -1,9 +1,4 @@
-.container {
-   
-}
 
-.item {
-}
 .contact {
    
 }
@@ -24,11 +19,21 @@
 .demo {
     // height: 100vh;
 }
+.menu-btn{
+    display: none;
+}
+
+
+@media(max-width: 768px) {
+    .menu-btn{
+        display: block;
+    }
+}
+
 
 
 @media(min-width: 576px) {
-
- 
+  
    
 }
 
@@ -43,6 +48,7 @@
 .landing {
     height: 95vh;
 }
+
 }
 
 

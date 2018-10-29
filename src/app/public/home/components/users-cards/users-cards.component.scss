@@ -9,8 +9,8 @@ ion-grid {
 
 ion-card {
     background: white;
-    height: 90%;
-
+    height: auto;
+    min-height: 95%;
 }
 .dollar {
     font-size: 60px
