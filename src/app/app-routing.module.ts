@@ -10,7 +10,12 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './public/home/home.module#HomePageModule'
-  }
+  },
+  {
+    path: 'feedback',
+    loadChildren: './public/feedback/feedback.module#FeedbackPageModule'
+   }
+
 ];
 
 @NgModule({
