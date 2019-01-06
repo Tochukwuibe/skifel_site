@@ -56,12 +56,7 @@ export class DemoComponent implements OnInit {
 
   public async onFeedback() {
 
-    const loader = await this.loadingCtrl.create({ message: 'Please wait...' });
-    await loader.present();
-    const modal = await this.modal.create({ component: FeedbackPage });
 
-    await modal.present();
-    await loader.dismiss();
   }
 
   public onDemo() {
