@@ -31,11 +31,11 @@ export class AppComponent {
       url: 'demo',
       icon: 'construct'
     },
-    // {
-    //   title: 'Team',
-    //   url: 'team',
-    //   icon: 'people'
-    // },
+    {
+      title: 'Head start',
+      url: 'support',
+      icon: 'walk'
+    },
     {
       title: 'Contact',
       url: 'contact',

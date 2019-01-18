@@ -14,12 +14,15 @@ const routes: Routes = [
   {
     path: 'feedback',
     loadChildren: './public/feedback/feedback.module#FeedbackPageModule'
-   }
-
+  },
+  {
+    path: 'support',
+    loadChildren: './public/support-form/support-form.module#SupportFormPageModule'
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

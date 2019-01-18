@@ -1,0 +1,34 @@
+.container {
+    text-align: center;
+    padding: 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-container {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+
+
+
+@media(min-width: 576px) {
+  
+   
+}
+
+@media(min-width: 768px) {
+    
+    .container {
+        text-align: center;
+        padding: 0 10%;
+    }
+
+}
+
+
+@media(min-width: 992px) {
+ 
+}

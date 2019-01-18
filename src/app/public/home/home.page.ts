@@ -19,6 +19,7 @@ export class HomePage implements OnInit {
     @ViewChild('demo') demo: ElementRef;
     @ViewChild('team') team: ElementRef;
     @ViewChild('contact') contact: ElementRef;
+    @ViewChild('support') support: ElementRef;
 
     constructor(
         private Ar: ActivatedRoute,
@@ -70,6 +71,11 @@ export class HomePage implements OnInit {
 
             case 'demo': {
                 (this.demo.nativeElement as Element).scrollIntoView({ behavior: 'smooth', block: 'start' });
+                break;
+            }
+
+            case 'support': {
+                (this.support.nativeElement as Element).scrollIntoView({ behavior: 'smooth', block: 'start' });
                 break;
             }
 

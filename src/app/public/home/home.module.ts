@@ -17,6 +17,7 @@ import { FeedbackPage } from './modals/feedback/feedback.page';
 import { UsersCardsComponent } from './components/users-cards/users-cards.component';
 
 import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { SupportComponent } from './components/support/support.component';
 
 
 const homeRoutes: Routes = [
@@ -48,7 +49,8 @@ const homeRoutes: Routes = [
     ContactComponent,
     TeamCardComponent,
     FeedbackPage,
-    UsersCardsComponent
+    UsersCardsComponent,
+    SupportComponent
   ],
   entryComponents: [
     FeedbackPage
