@@ -18,7 +18,8 @@ const routes: Routes = [
   {
     path: 'support',
     loadChildren: './public/support-form/support-form.module#SupportFormPageModule'
-  }
+  },
+  { path: 'support-group', loadChildren: './public/support-group/support-group.module#SupportGroupPageModule' }
 ];
 
 @NgModule({

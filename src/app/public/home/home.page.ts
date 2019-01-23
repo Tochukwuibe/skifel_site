@@ -16,7 +16,7 @@ export class HomePage implements OnInit {
     @ViewChild('header') header: ElementRef;
     @ViewChild('why') why: ElementRef;
     @ViewChild('plan') how: ElementRef;
-    @ViewChild('demo') demo: ElementRef;
+    @ViewChild('download') download: ElementRef;
     @ViewChild('team') team: ElementRef;
     @ViewChild('contact') contact: ElementRef;
     @ViewChild('support') support: ElementRef;
@@ -69,8 +69,8 @@ export class HomePage implements OnInit {
                 break;
             }
 
-            case 'demo': {
-                (this.demo.nativeElement as Element).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            case 'download': {
+                (this.download.nativeElement as Element).scrollIntoView({ behavior: 'smooth', block: 'start' });
                 break;
             }
 

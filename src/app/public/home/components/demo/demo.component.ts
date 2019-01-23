@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController, LoadingController } from '@ionic/angular';
-import { FeedbackPage } from '../../modals/feedback/feedback.page';
 import { Subject, Observable } from 'rxjs';
-import { filter, first, map, tap } from 'rxjs/operators';
+import { filter, first, map } from 'rxjs/operators';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { fadeInLeft, slideInRight, zoomIn } from 'ng-animate';
 
@@ -31,8 +29,6 @@ export class DemoComponent implements OnInit {
 
 
   constructor(
-    private modal: ModalController,
-    private loadingCtrl: LoadingController
   ) { }
 
   ngOnInit() {
@@ -59,8 +55,12 @@ export class DemoComponent implements OnInit {
 
   }
 
-  public onDemo() {
-    window.open('https://skiffel-demo.firebaseapp.com/#/home', '_blank');
+  public onAndroid() {
+    window.open('https://play.google.com/store/apps/details?id=com.jaynus.nova', '_blank');
+  }
+
+  public onIos() {
+
   }
 
 }

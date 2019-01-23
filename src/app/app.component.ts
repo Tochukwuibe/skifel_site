@@ -27,8 +27,8 @@ export class AppComponent {
       icon: 'bulb'
     },
     {
-      title: 'Demo',
-      url: 'demo',
+      title: 'Download',
+      url: 'download',
       icon: 'construct'
     },
     {

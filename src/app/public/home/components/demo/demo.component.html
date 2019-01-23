@@ -7,19 +7,26 @@
   <div class="item2" [@zoomin]="enter$ | async">
 
 
-    <h3>What do you think of our idea?</h3>
-    <h6>Your feedback is important to us</h6>
-
-    <ion-button href="/feedback" color="light" fill="outline" shape="round" expand="full">
-      Feedback
-    </ion-button>
+    <div class="intro">
+      <h3>Can't wait to get started ? </h3>
+      <h6>Skiffel is open for beta testing now</h6>
+    </div>
 
 
-    <h3>See a demo now</h3>
 
-    <ion-button (click)="onDemo()" color="light" fill="outline" shape="round" expand="full">
-      Demo
-    </ion-button>
+
+    <div class="actions">
+      <ion-button (click)="onIos()" color="light" fill="outline" shape="round" expand="full">
+        IOS
+      </ion-button>
+
+      <ion-button (click)="onAndroid()" color="light" fill="outline" shape="round" expand="full">
+        Android
+      </ion-button>
+
+
+    </div>
+
 
   </div>
 

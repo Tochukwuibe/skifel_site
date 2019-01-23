@@ -1,0 +1,8 @@
+.container  {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    grid-template: 1fr / 1fr;
+    height: auto;
+    overflow-x: scroll;
+}

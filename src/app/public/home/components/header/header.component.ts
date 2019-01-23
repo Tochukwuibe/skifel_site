@@ -3,7 +3,7 @@ import { Slides, Platform } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { trigger, transition, useAnimation } from '@angular/animations';
 
-import { zoomIn, fadeInDown, fadeInUp} from 'ng-animate';
+import { zoomIn, fadeInUp} from 'ng-animate';
 
 
 @Component({
