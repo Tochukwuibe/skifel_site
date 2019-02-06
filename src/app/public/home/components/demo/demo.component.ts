@@ -3,6 +3,7 @@ import { Subject, Observable } from 'rxjs';
 import { filter, first, map } from 'rxjs/operators';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { fadeInLeft, slideInRight, zoomIn } from 'ng-animate';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-demo',
@@ -29,6 +30,7 @@ export class DemoComponent implements OnInit {
 
 
   constructor(
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -56,11 +58,11 @@ export class DemoComponent implements OnInit {
   }
 
   public onAndroid() {
-    window.open('https://play.google.com/store/apps/details?id=com.jaynus.nova', '_blank');
+   this.router.navigate(['/testing', 'android']);
   }
 
   public onIos() {
-
+    this.router.navigate(['/testing', 'ios']);
   }
 
 }

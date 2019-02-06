@@ -31,11 +31,11 @@ export class AppComponent {
       url: 'download',
       icon: 'construct'
     },
-    {
-      title: 'Head start',
-      url: 'support',
-      icon: 'walk'
-    },
+    // {
+    //   title: 'Head start',
+    //   url: 'support',
+    //   icon: 'walk'
+    // },
     {
       title: 'Contact',
       url: 'contact',

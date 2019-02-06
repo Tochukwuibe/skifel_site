@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    height: auto;
+    grid-template: 1fr / 1fr;
+    grid-row-gap: 2%;
+}
+
+
+.platform-title {
+    margin: 5px;
+}
+
+.instructions-list {
+    justify-self: center;
+    min-width: 200px;
+    max-width: 600px;
+}
+
+.actions{
+    justify-self: center;
+    max-width: 200px;
+    width: 200px
+}
