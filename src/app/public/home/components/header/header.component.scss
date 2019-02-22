@@ -47,7 +47,10 @@
     max-height: 300px;
 }
 
-
+#sub-title {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
 
 ion-card {
     margin: 0;
@@ -90,6 +93,17 @@ ion-card {
     grid-row-end: 5
 }
 
+.store-buttons {
+    align-self: center;
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 200px;
+}
+
 .title {
     text-align: center;
    
@@ -105,7 +119,8 @@ ion-card {
     font-weight: 400;
     font-size: 65px;
     color: white;
-    text-shadow: 2px 2px 25px #000000
+    text-shadow: 2px 2px 25px #000000;
+    margin: 15px 0;
 }
 
 #brief-desc {

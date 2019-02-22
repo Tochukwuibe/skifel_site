@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { slideInLeft, slideInRight } from 'ng-animate';
 import { Subject, Observable } from 'rxjs';
-import { filter, scan, map, skip, switchMap, first, tap } from 'rxjs/operators';
+import { filter, map, skip, first, tap } from 'rxjs/operators';
 
 
 @Component({
@@ -55,9 +55,10 @@ export class WhyComponent implements OnInit, OnDestroy {
 
 
   private setTexts() {
-    this.money = 'Going out with friends and having a good time can become very expensive.';
-    this.time = 'I spend a lot of time going through Instagram, Twitter etc.. trying to find things to do in my free time.';
-    this.difficult = 'There aren`t enough open things to do around me, they are just too exclusive and difficult to be a part of.';
+    this.money = '"Having to jump between multiple apps to sucessfully promote or find entertaining events is a hassel."';
+    this.time = "\"Most event sharing platforms are just stacks of digital flyers that can't keep my attention for more than 5 minutes.\"";
+    this.difficult = "\"I want to know whether or not an event is going to be worth my time as soon as possible.\"";
+ 
   }
 
 

@@ -46,4 +46,12 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/home'], {fragment: 'why'});
   }
 
+  public onAndroid() {
+    this.router.navigate(['/testing', 'android']);
+   }
+ 
+   public onIos() {
+     this.router.navigate(['/testing', 'ios']);
+   }
+
 }

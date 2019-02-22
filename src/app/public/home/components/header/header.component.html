@@ -11,17 +11,24 @@
       <ion-card-content class="main-card-content">
 
         <div class="title">
+          <h3 id="sub-title" class="title">The fun starts before the event.</h3>
           <h2 id="title-text">Skiffel</h2>
         </div>
 
         <div class="card-cnt">
           <p id="brief-desc">
-            A Social media platform that makes promoting and discovering events simple
+            A Social media platform that makes promoting and discovering events simple.
           </p>
         </div>
 
         <div class="action">
           <ion-button fill="outline" shape="round" (click)="onBegin()" expand="full">Begin</ion-button>
+        </div>
+
+
+        <div class="store-buttons">
+          <img (click)="onIos()" src="../../../../../assets/icon/appstorebadge.svg" alt="">
+          <img (click)="onAndroid()" src="../../../../../assets/icon/playstorebadge.png" alt="">
         </div>
       </ion-card-content>
     </ion-card>

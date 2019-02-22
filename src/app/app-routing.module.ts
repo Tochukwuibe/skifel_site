@@ -20,7 +20,8 @@ const routes: Routes = [
     loadChildren: './public/support-form/support-form.module#SupportFormPageModule'
   },
   { path: 'support-group', loadChildren: './public/support-group/support-group.module#SupportGroupPageModule' },
-  { path: 'testing', loadChildren: './public/testing/testing.module#TestingPageModule' }
+  { path: 'testing', loadChildren: './public/testing/testing.module#TestingPageModule' },
+  {path: '**', redirectTo: '/'}
 ];
 
 @NgModule({
