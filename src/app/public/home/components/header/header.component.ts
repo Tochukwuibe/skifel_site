@@ -27,6 +27,8 @@ export class HeaderComponent implements OnInit {
   public photo = 'url(../../../../../../../assets/imgs/stacy_pro_phone.png)';
   public photoStyle: { [key: string]: string };
 
+  public launchDate = new Date();
+
   constructor(
     private router: Router,
     private platform: Platform
