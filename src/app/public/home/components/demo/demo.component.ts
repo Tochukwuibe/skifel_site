@@ -4,6 +4,7 @@ import { filter, first, map } from 'rxjs/operators';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { fadeInLeft, slideInRight, zoomIn } from 'ng-animate';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-demo',
@@ -30,7 +31,8 @@ export class DemoComponent implements OnInit {
 
 
   constructor(
-    private router: Router
+    private router: Router,
+    private toastCtrl: ToastController
   ) { }
 
   ngOnInit() {
@@ -53,16 +55,21 @@ export class DemoComponent implements OnInit {
 
 
   public async onFeedback() {
-
-
+    const toast = await this.toastCtrl.create({
+      message: 'The app is currently under maintainance in preparation for its launch',
+      closeButtonText: 'OK',
+      position: 'top',
+      showCloseButton: true
+    })
+    await toast.present();
   }
 
   public onAndroid() {
-   this.router.navigate(['/testing', 'android']);
-  }
+    window.open('https://play.google.com/store/apps/details?id=com.eth.skiffel', '_blank');
+  } 
 
   public onIos() {
-    this.router.navigate(['/testing', 'ios']);
+    window.open('https://itunes.apple.com/us/app/skiffel/id1454181015', '_blank');
   }
 
 }
